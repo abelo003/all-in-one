@@ -1,0 +1,29 @@
+#server:
+#  port: 9002
+
+spring:
+  application:
+    name: USER-SERVICE
+  profiles:
+    active: local
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9296
+      request-connect-timeout: 5000
+      request-read-timeout: 5000
+
+#  zipkin:
+#    base-url: http://127.0.0.1:9411
+
+#Confired in application.yml in cloud config
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost

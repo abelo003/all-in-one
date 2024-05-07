@@ -1,0 +1,5 @@
+com/all/inone/department/service/DepartmentService.class
+com/all/inone/department/repository/DepartmentRepository.class
+com/all/inone/department/DepartmentServiceApplication.class
+com/all/inone/department/entity/Department.class
+com/all/inone/department/controller/DepartmentController.class
